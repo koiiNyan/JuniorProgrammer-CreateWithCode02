@@ -18,6 +18,8 @@ namespace FallingDownGame
         private const float _ballPositionZ = 0;
         private int _waveNumber = 1;
         private int _ballCount = 0;
+        [SerializeField]
+        private int _maxWaveNumber = 10;
 
 
         private void Start()
@@ -35,7 +37,7 @@ namespace FallingDownGame
                 //todo add different force so balls will have different speed of falling
             }
 
-            _waveNumber++;
+            if (_waveNumber <= _maxWaveNumber) _waveNumber++;
         }
 
         public void UpdateScore()
