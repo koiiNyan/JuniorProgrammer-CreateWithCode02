@@ -4,21 +4,26 @@ using UnityEngine;
 
 namespace FallingDownGame
 {
-    public class BallScript : MonoBehaviour
+    public class Ball : MonoBehaviour
     {
-        [SerializeField]
-        private GameManager _gameManager;
+        private GameObject _gameManager;
+
+        private void Awake()
+        {
+            _gameManager = GameObject.Find("GameManager");
+        }
 
         private void OnTriggerEnter(Collider other)
         {
             Debug.Log("Trigger");
-            _gameManager.UpdateScore();
+            _gameManager.GetComponent<GameManager>().UpdateScore();
             StartCoroutine(DestroyBall());
         }
 
         private IEnumerator DestroyBall()
         {
             yield return new WaitForSeconds(0.2f);
+            Debug.Log(gameObject.name);
             Destroy(gameObject);
         }
     }
