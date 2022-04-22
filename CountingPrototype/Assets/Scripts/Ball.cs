@@ -17,22 +17,27 @@ namespace FallingDownGame
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log("Trigger");
-            _gameManager.GetComponent<GameManager>().UpdateScore();
-            StartCoroutine(DestroyBall());
+            if (!Grounded)
+            {
+                _gameManager.GetComponent<GameManager>().UpdateScore();
+                StartCoroutine(DestroyBall());
+            }
         }
 
         private IEnumerator DestroyBall()
         {
             yield return new WaitForSeconds(0.2f);
-            Debug.Log(gameObject.name);
             Destroy(gameObject);
         }
 
-        //todo If collides with ground, destroy after 5 sec, assign grounded = true
+        //todo If collides with ground, move forward to camera, assign grounded = true, remove when ball is not in camera view
         private void OnCollisionEnter(Collision collision)
         {
-            Debug.Log(collision.gameObject.name);
+            if (collision.gameObject.CompareTag("Floor"))
+            {
+                Grounded = true;
+            }
+
         }
     }
 }
