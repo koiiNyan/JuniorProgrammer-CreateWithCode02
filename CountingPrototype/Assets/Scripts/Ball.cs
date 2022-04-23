@@ -8,6 +8,7 @@ namespace FallingDownGame
     {
         private GameObject _gameManager;
         private Rigidbody _ballRb;
+        private float _ballForwardForce = 100f;
 
         public bool Grounded = false;
 
@@ -34,13 +35,12 @@ namespace FallingDownGame
             Destroy(gameObject);
         }
 
-        //todo If collides with ground, move forward to camera, assign grounded = true, remove when ball is not in camera view
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.CompareTag("Floor"))
             {
                 Grounded = true;
-                _ballRb.AddForce(Vector3.back * 100f, ForceMode.Acceleration);
+                _ballRb.AddForce(Vector3.back * _ballForwardForce, ForceMode.Acceleration);
             }
 
         }

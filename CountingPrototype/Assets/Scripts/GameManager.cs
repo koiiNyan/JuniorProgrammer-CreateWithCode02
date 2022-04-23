@@ -34,7 +34,6 @@ namespace FallingDownGame
             for (int i = 0; i < enemiesToSpawn; i++)
             {
                 Instantiate(ballPrefab, GenerateSpawnPosition(), ballPrefab.transform.rotation);
-                //todo add different force so balls will have different speed of falling
             }
 
             if (_waveNumber <= _maxWaveNumber) _waveNumber++;
