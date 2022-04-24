@@ -16,11 +16,17 @@ namespace FallingDownGame
         [SerializeField]
         private float _maxFallingSpeed = 50f;
 
+        private AudioSource _ballAudio;
+        [SerializeField]
+        private AudioClip _ballInBox;
+        [SerializeField]
+        private AudioClip _ballOnFloor;
+
         private void Awake()
         {
             _gameManager = GameObject.Find("GameManager");
             _ballRb = GetComponent<Rigidbody>();
-            //StartCoroutine(Fall());
+            _ballAudio = GetComponent<AudioSource>();
 
             _ballRb.velocity = Vector3.down * GetRandomSpeed() * Time.deltaTime;
         }
@@ -29,6 +35,7 @@ namespace FallingDownGame
         {
             if (!Grounded && other.gameObject.CompareTag("Player"))
             {
+                _ballAudio.PlayOneShot(_ballInBox, 1f);
                 _gameManager.GetComponent<GameManager>().UpdateScore();
                 StartCoroutine(DestroyBall());
             }
@@ -46,6 +53,7 @@ namespace FallingDownGame
         {
             if (collision.gameObject.CompareTag("Floor"))
             {
+                _ballAudio.PlayOneShot(_ballOnFloor, 1f);
                 Grounded = true;
                 _ballRb.AddForce(Vector3.back * _ballForwardForce, ForceMode.Acceleration);
             }
