@@ -22,6 +22,9 @@ namespace FallingDownGame
         [SerializeField]
         private AudioClip _ballOnFloor;
 
+        [SerializeField]
+        private ParticleSystem _smokeParticle;
+
         private void Awake()
         {
             _gameManager = GameObject.Find("GameManager");
@@ -56,6 +59,7 @@ namespace FallingDownGame
                 _ballAudio.PlayOneShot(_ballOnFloor, 1f);
                 Grounded = true;
                 _ballRb.AddForce(Vector3.back * _ballForwardForce, ForceMode.Acceleration);
+                _smokeParticle.Play();
             }
 
         }
