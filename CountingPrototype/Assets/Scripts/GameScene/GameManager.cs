@@ -26,7 +26,7 @@ namespace FallingDownGame
         {
             _counter = 0;
 
-            SpawnBallWave(_waveNumber);
+           SpawnBallWave(_waveNumber);
         }
 
         private void SpawnBallWave(int enemiesToSpawn)
