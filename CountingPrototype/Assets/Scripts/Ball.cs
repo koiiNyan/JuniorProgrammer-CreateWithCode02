@@ -11,11 +11,18 @@ namespace FallingDownGame
         private float _ballForwardForce = 100f;
 
         public bool Grounded = false;
+        [SerializeField]
+        private float _minFallingSpeed = 1f;
+        [SerializeField]
+        private float _maxFallingSpeed = 50f;
 
         private void Awake()
         {
             _gameManager = GameObject.Find("GameManager");
             _ballRb = GetComponent<Rigidbody>();
+            //StartCoroutine(Fall());
+
+            _ballRb.velocity = Vector3.down * GetRandomSpeed() * Time.deltaTime;
         }
 
         private void OnTriggerEnter(Collider other)
@@ -44,5 +51,8 @@ namespace FallingDownGame
             }
 
         }
+        
+        private float GetRandomSpeed() => Random.Range(_minFallingSpeed, _maxFallingSpeed);
+
     }
 }

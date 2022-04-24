@@ -16,7 +16,7 @@ namespace FallingDownGame
         private float _ballSpawnRangeX = 13;
         private const float _ballPositionY = 16;
         private const float _ballPositionZ = 0;
-        private int _waveNumber = 1;
+        [SerializeField] private int _waveNumber = 1;
         private int _ballCount = 0;
         [SerializeField]
         private int _maxWaveNumber = 10;
@@ -36,7 +36,7 @@ namespace FallingDownGame
                 Instantiate(ballPrefab, GenerateSpawnPosition(), ballPrefab.transform.rotation);
             }
 
-            if (_waveNumber <= _maxWaveNumber) _waveNumber++;
+            if (_waveNumber <= _maxWaveNumber && _waveNumber + 1 >= GetAllActiveBallsLength()) _waveNumber++;
         }
 
         public void UpdateScore()
@@ -57,7 +57,7 @@ namespace FallingDownGame
         void Update()
         {
             var allBalls = FindObjectsOfType<Ball>();
-            _ballCount = allBalls.Length;
+            _ballCount = GetAllActiveBallsLength();
             if (_ballCount == 0 || CheckAllActiveBallsGrounded(allBalls))
             {
                 SpawnBallWave(_waveNumber);
@@ -73,5 +73,9 @@ namespace FallingDownGame
             }
             return true;
         }
+
+        private Ball[] GetAllActiveBalls() => FindObjectsOfType<Ball>();
+
+        private int GetAllActiveBallsLength() => GetAllActiveBalls().Length;
     }
 }
