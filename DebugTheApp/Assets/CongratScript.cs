@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CongratScript : MonoBehaviour
@@ -6,7 +7,7 @@ public class CongratScript : MonoBehaviour
     public TextMesh Text;
     public ParticleSystem SparksParticles;
     
-    private List<string> TextToDisplay;
+    private List<string> TextToDisplay = new List<string>();
     
     private float RotatingSpeed;
     private float TimeToNextText;
@@ -17,9 +18,9 @@ public class CongratScript : MonoBehaviour
     void Start()
     {
         TimeToNextText = 0.0f;
-        CurrentText = 0
+        CurrentText = 0;
         
-        RotatingSpeed = 1.0;
+        RotatingSpeed = 1.0f;
 
         TextToDisplay.Add("Congratulation");
         TextToDisplay.Add("All Errors Fixed");
@@ -32,7 +33,10 @@ public class CongratScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.Rotate(Vector3.one * RotatingSpeed * Time.deltaTime);
+
         TimeToNextText += Time.deltaTime;
+
 
         if (TimeToNextText > 1.5f)
         {
@@ -42,7 +46,7 @@ public class CongratScript : MonoBehaviour
             if (CurrentText >= TextToDisplay.Count)
             {
                 CurrentText = 0;
-
+            }
 
             Text.text = TextToDisplay[CurrentText];
         }
