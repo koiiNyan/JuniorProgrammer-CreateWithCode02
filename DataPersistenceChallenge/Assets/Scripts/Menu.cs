@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,11 +10,6 @@ public class Menu : MonoBehaviour
     private InputField _inputField;
     public string nameInput;
 
-
-    public void StartGame()
-    {
-        SceneManager.LoadScene(1);
-    }
 
     private void Awake()
     {
@@ -31,4 +27,20 @@ public class Menu : MonoBehaviour
     {
         nameInput = _inputField.text;
     }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void ExitGame()
+    {
+#if UNITY_EDITOR
+        EditorApplication.ExitPlaymode();
+#else
+        Application.Quit(); // original code to quit Unity player
+#endif
+    }
+
 }
+

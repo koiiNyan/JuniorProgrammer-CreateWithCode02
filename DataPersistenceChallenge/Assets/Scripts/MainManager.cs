@@ -83,12 +83,28 @@ public class MainManager : MonoBehaviour
         m_GameOver = true;
         GameOverText.SetActive(true);
 
-        if (CheckIfBiggerScore())
-        {
-            SaveScore();
-            LoadScore();
-        }
+        SaveLoad.SaveScore(Menu.Instance.nameInput, m_Points);
+
+        SceneManager.LoadScene(2);
     }
+
+    private void LoadScore()
+    {
+        Score data = SaveLoad.GetHighestScore();
+        if (data != null)
+        {
+            _bestScoreName = data.Name;
+            _bestScorePoints = data.Points;
+        }
+
+    }
+
+    private void UpdateBestScoreText()
+    {
+        _bestScoreText.text = $"Best Score : {_bestScoreName} : {_bestScorePoints}";
+    }
+
+    /*
 
     [System.Serializable]
     class SaveData
@@ -127,8 +143,6 @@ public class MainManager : MonoBehaviour
         return true;
     }
 
-    private void UpdateBestScoreText()
-    {
-        _bestScoreText.text = $"Best Score : {_bestScoreName} : {_bestScorePoints}";
-    }
+
+    */
 }
