@@ -25,12 +25,25 @@ public class MainManager : MonoBehaviour
     [SerializeField]
     private Text _bestScoreText;
 
-    
+    private int _difficultyLevel;
+    private Color _ballColor;
+    [SerializeField]
+    private Text _difficultytext;
+
+    [SerializeField]
+    private MeshRenderer Renderer;
+
+
     // Start is called before the first frame update
     void Start()
     {
         LoadScore();
+        LoadColorAndDifficulty();
         UpdateBestScoreText();
+
+        Material material = Renderer.material;
+
+        material.color = _ballColor;
 
         const float step = 0.6f;
         int perLine = Mathf.FloorToInt(4.0f / step);
@@ -46,6 +59,7 @@ public class MainManager : MonoBehaviour
                 brick.onDestroyed.AddListener(AddPoint);
             }
         }
+
     }
 
     private void Update()
@@ -99,9 +113,35 @@ public class MainManager : MonoBehaviour
 
     }
 
+    public void LoadColorAndDifficulty()
+    {
+        if (Settings.Instance != null)
+        {
+            _difficultyLevel = Settings.Instance.DifficultyLevel;
+            _ballColor = Settings.Instance.BallColor;
+        }
+        else
+        {
+            _difficultyLevel = 1;
+            _ballColor = Color.white;
+        }
+    }
+
     private void UpdateBestScoreText()
     {
         _bestScoreText.text = $"Best Score : {_bestScoreName} : {_bestScorePoints}";
+    }
+
+    private void UpdateDifficultyText()
+    {
+        Dictionary<int, string> difficultyConverter = new Dictionary<int, string>()
+        {
+            { 0 , "Easy" },
+            { 1, "Medium" },
+            { 2, "Hard" },
+        };
+
+        _difficultytext.text = $"{difficultyConverter[_difficultyLevel]}";
     }
 
     /*

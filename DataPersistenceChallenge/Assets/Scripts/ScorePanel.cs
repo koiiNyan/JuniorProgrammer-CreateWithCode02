@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,5 +23,14 @@ public class ScorePanel : MonoBehaviour
             scoresString += $"{score.Name}: {score.Points}\n";
 
         _scoresText.text = scoresString;
+    }
+
+    public void ExitGame()
+    {
+#if UNITY_EDITOR
+        EditorApplication.ExitPlaymode();
+#else
+        Application.Quit(); // original code to quit Unity player
+#endif
     }
 }

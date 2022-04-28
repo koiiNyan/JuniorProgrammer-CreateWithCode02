@@ -6,6 +6,8 @@ using System.Linq;
 using UnityEngine;
 
 
+#region Scores
+
 [Serializable]
 public class ScoreTable
 {
@@ -18,10 +20,7 @@ public class ScoreTable
 
     public ScoreTable([NotNull] List<Score> scores)
     {
-        if (scores == null)
-            throw new ArgumentNullException(nameof(scores));
-
-        Scores = scores;
+        Scores = scores ?? throw new ArgumentNullException(nameof(scores));
     }
 }
 
@@ -80,4 +79,44 @@ public class SaveLoad
  
 
     public static IEnumerable<Score> GetHighestScores() => LoadScore().Scores.OrderByDescending(s => s.Points).Take(10);
+
+
+#endregion
+
+#region Settings
+
+    [System.Serializable]
+    public class SettingsSaveData
+    {
+        public Color BallColor;
+        public int Difficulty;
+    }
+
+    public static void SaveSettings(Color colorToSave, int difficulty)
+    {
+        SettingsSaveData data = new SettingsSaveData();
+        data.BallColor = colorToSave;
+        data.Difficulty = difficulty;
+
+        string json = JsonUtility.ToJson(data);
+
+        File.WriteAllText(Application.persistentDataPath + "/settings.json", json);
+    }
+
+    public static SettingsSaveData LoadSettings()
+    {
+        string path = Application.persistentDataPath + "/settings.json";
+        if (File.Exists(path))
+        {
+            string json = File.ReadAllText(path);
+            SettingsSaveData data = JsonUtility.FromJson<SettingsSaveData>(json);
+
+            return data;
+        }
+
+        return null;
+    }
+
+    #endregion
+
 }

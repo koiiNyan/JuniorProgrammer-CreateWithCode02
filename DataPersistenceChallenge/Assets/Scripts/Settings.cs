@@ -1,13 +1,15 @@
-using UnityEditor;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class Menu : MonoBehaviour
+public class Settings : MonoBehaviour
 {
-    public static Menu Instance;
-    public InputField InputField;
-    public string nameInput;
+    public static Settings Instance;
+
+    public int DifficultyLevel;
+
+    public Color BallColor;
 
 
     private void Awake()
@@ -21,7 +23,5 @@ public class Menu : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-    
 
 }
-
