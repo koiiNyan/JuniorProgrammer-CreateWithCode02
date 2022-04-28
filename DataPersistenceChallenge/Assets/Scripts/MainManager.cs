@@ -41,6 +41,7 @@ public class MainManager : MonoBehaviour
         LoadScore();
         LoadColorAndDifficulty();
         UpdateBestScoreText();
+        UpdateDifficultyText();
 
         Material material = Renderer.material;
 
@@ -138,7 +139,7 @@ public class MainManager : MonoBehaviour
         Dictionary<int, string> difficultyConverter = new Dictionary<int, string>()
         {
             { 0 , "Easy" },
-            { 1, "Normal" },
+            { 1, "Medium" },
             { 2, "Hard" },
         };
 
