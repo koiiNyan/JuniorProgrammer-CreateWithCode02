@@ -25,6 +25,7 @@ public class MainManager : MonoBehaviour
     [SerializeField]
     private Text _bestScoreText;
 
+    [SerializeField]
     private int _difficultyLevel;
     private Color _ballColor;
     [SerializeField]
@@ -137,7 +138,7 @@ public class MainManager : MonoBehaviour
         Dictionary<int, string> difficultyConverter = new Dictionary<int, string>()
         {
             { 0 , "Easy" },
-            { 1, "Medium" },
+            { 1, "Normal" },
             { 2, "Hard" },
         };
 

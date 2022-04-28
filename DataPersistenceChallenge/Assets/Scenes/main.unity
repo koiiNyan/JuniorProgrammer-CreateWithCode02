@@ -504,7 +504,8 @@ MonoBehaviour:
   ScoreText: {fileID: 188020406}
   GameOverText: {fileID: 474497238}
   _bestScoreText: {fileID: 2078529056}
-  _difficultytext: {fileID: 0}
+  _difficultyLevel: 0
+  _difficultytext: {fileID: 1800101207}
   Renderer: {fileID: 177912859}
 --- !u!1 &455529321
 GameObject:
