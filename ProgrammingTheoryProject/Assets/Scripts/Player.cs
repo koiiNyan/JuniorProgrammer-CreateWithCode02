@@ -12,7 +12,7 @@ namespace Jumpy
         protected override void Move()
         {
             horizontalInput = Input.GetAxis("Horizontal");
-            this.rB.AddForce(Vector2.right * MovementSpeed);
+            this.rB.AddForce(Vector2.right * MovementSpeed * horizontalInput);
 
             /*verticalInput = Input.GetAxis("Vertical");
             transform.Translate(Vector2.up * verticalInput * MovementSpeed * Time.deltaTime);*/
@@ -22,7 +22,7 @@ namespace Jumpy
 
         private void Awake()
         {
-            this.MovementSpeed = 10f;
+            this.MovementSpeed = 5f;
             this.rB = GetComponent<Rigidbody2D>();
             
         }
