@@ -1,7 +1,151 @@
 fileFormatVersion: 2
 guid: f8300c0263b62f544a30656048a6fd05
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8793664803177749604
+    second: vita_0
+  - first:
+      213: -9128365352674948987
+    second: vita_1
+  - first:
+      213: 1524102957194560351
+    second: vita_2
+  - first:
+      213: -2991084474926613282
+    second: vita_3
+  - first:
+      213: -3653537643063396842
+    second: vita_4
+  - first:
+      213: 2258438345189654937
+    second: vita_5
+  - first:
+      213: 856057223521706600
+    second: vita_6
+  - first:
+      213: 4836679882358322572
+    second: vita_7
+  - first:
+      213: -1444994647900723048
+    second: vita_8
+  - first:
+      213: 2293595919983461961
+    second: vita_9
+  - first:
+      213: 7823582132929981674
+    second: vita_10
+  - first:
+      213: -7477909992183721964
+    second: vita_11
+  - first:
+      213: -8137389440985666175
+    second: vita_12
+  - first:
+      213: 4355449351203222389
+    second: vita_13
+  - first:
+      213: -298084739994519882
+    second: vita_14
+  - first:
+      213: -7963600770426851392
+    second: vita_15
+  - first:
+      213: -5237853520227532679
+    second: vita_16
+  - first:
+      213: -4373400508621758831
+    second: vita_17
+  - first:
+      213: 4167475151226105764
+    second: vita_18
+  - first:
+      213: -862095056733284220
+    second: vita_19
+  - first:
+      213: 5760482750716273221
+    second: vita_20
+  - first:
+      213: 4252336339439016903
+    second: vita_21
+  - first:
+      213: -4305214397829815157
+    second: vita_22
+  - first:
+      213: -6305151362621240396
+    second: vita_23
+  - first:
+      213: -6220942036455404526
+    second: vita_24
+  - first:
+      213: -4901261853520295617
+    second: vita_25
+  - first:
+      213: -6083519960112703107
+    second: vita_26
+  - first:
+      213: -6582980060769368000
+    second: vita_27
+  - first:
+      213: -5696076148675533325
+    second: vita_28
+  - first:
+      213: 1111445399682558861
+    second: vita_29
+  - first:
+      213: -8655373694546473824
+    second: vita_30
+  - first:
+      213: -3523324161002537198
+    second: vita_31
+  - first:
+      213: 5964905014017356152
+    second: vita_32
+  - first:
+      213: 7310172057469691921
+    second: vita_33
+  - first:
+      213: 8635214717614337080
+    second: vita_34
+  - first:
+      213: 8244691506835662725
+    second: vita_35
+  - first:
+      213: 4224550464025240293
+    second: vita_36
+  - first:
+      213: -2475503128472447910
+    second: vita_37
+  - first:
+      213: 4384919136370416195
+    second: vita_38
+  - first:
+      213: 1278036380556768871
+    second: vita_39
+  - first:
+      213: -6471514183525979221
+    second: vita_40
+  - first:
+      213: -7190488713042568368
+    second: vita_41
+  - first:
+      213: -7009311969986797054
+    second: vita_42
+  - first:
+      213: 4186922291554450372
+    second: vita_43
+  - first:
+      213: 2426502570269756168
+    second: vita_44
+  - first:
+      213: -6993957468491564001
+    second: vita_45
+  - first:
+      213: 7115084943040566501
+    second: vita_46
+  - first:
+      213: 8073445790151623790
+    second: vita_47
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +185,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,9 +219,1041 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: vita_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c932cbcc370a6f580800000000000000
+      internalID: -8793664803177749604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58883dd6318815180800000000000000
+      internalID: -9128365352674948987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 3
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5344b48093b62510800000000000000
+      internalID: 1524102957194560351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc30da74888d76d0800000000000000
+      internalID: -2991084474926613282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61630b3fed60c4dc0800000000000000
+      internalID: -3653537643063396842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_5
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 3
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991862095b5975f10800000000000000
+      internalID: 2258438345189654937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8622b6b528351eb00800000000000000
+      internalID: 856057223521706600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_7
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85fe382ab65f1340800000000000000
+      internalID: 4836679882358322572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_8
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898698d060952fbe0800000000000000
+      internalID: -1444994647900723048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_9
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94646e4565d74df10800000000000000
+      internalID: 2293595919983461961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_10
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec6260bf72f29c60800000000000000
+      internalID: 7823582132929981674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_11
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4109b855b70293890800000000000000
+      internalID: -7477909992183721964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_12
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 3
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18de80bca6f221f80800000000000000
+      internalID: -8137389440985666175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_13
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5737ca7db1aa17c30800000000000000
+      internalID: 4355449351203222389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_14
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 3
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b679af128dfcdbf0800000000000000
+      internalID: -298084739994519882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_15
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf2ea1da4b9b7190800000000000000
+      internalID: -7963600770426851392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_16
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9700f4589f76f47b0800000000000000
+      internalID: -5237853520227532679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_17
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 3
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e561f986f8e43c0800000000000000
+      internalID: -4373400508621758831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_18
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 5
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af691fd198d5d930800000000000000
+      internalID: 4167475151226105764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_19
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 3
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488dacc0d193904f0800000000000000
+      internalID: -862095056733284220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_20
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 4
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542653b9a8851ff40800000000000000
+      internalID: 5760482750716273221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_21
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 5
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb5fb1fe55530b30800000000000000
+      internalID: 4252336339439016903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_22
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 3
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84e47fa05ec044c0800000000000000
+      internalID: -4305214397829815157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_23
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 4
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb04e7ed3a9f78a0800000000000000
+      internalID: -6305151362621240396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_24
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21cc7c48d26caa9a0800000000000000
+      internalID: -6220942036455404526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_25
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 3
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3900cdef483bfbb0800000000000000
+      internalID: -4901261853520295617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_26
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 3
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79db7104def29ba0800000000000000
+      internalID: -6083519960112703107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_27
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048cc5a438e84a4a0800000000000000
+      internalID: -6582980060769368000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_28
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 3
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5ae900ce873f0b0800000000000000
+      internalID: -5696076148675533325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_29
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 3
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b225bc3b5ac6f00800000000000000
+      internalID: 1111445399682558861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_30
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac0c42ab7fe1e780800000000000000
+      internalID: -8655373694546473824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_31
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 3
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f74eac753aa1fc0800000000000000
+      internalID: -3523324161002537198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_32
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 3
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871737fb18997c250800000000000000
+      internalID: 5964905014017356152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_33
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 7
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118a77c51c2f27560800000000000000
+      internalID: 7310172057469691921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_34
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 3
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ca0aac80276d770800000000000000
+      internalID: 8635214717614337080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_35
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587ae934e370b6270800000000000000
+      internalID: 8244691506835662725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_36
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2afefa34e90aa30800000000000000
+      internalID: 4224550464025240293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_37
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54180b350f35add0800000000000000
+      internalID: -2475503128472447910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_38
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34adb24e8bc5adc30800000000000000
+      internalID: 4384919136370416195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_39
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766bc19115f7cb110800000000000000
+      internalID: 1278036380556768871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_40
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab280c33209036a0800000000000000
+      internalID: -6471514183525979221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_41
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b54a1cc90463c90800000000000000
+      internalID: -7190488713042568368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_42
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2022b0576ebe9be90800000000000000
+      internalID: -7009311969986797054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_43
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 4
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb744214afea1a30800000000000000
+      internalID: 4186922291554450372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_44
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 4
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b40834b3baca120800000000000000
+      internalID: 2426502570269756168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_45
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 4
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cbe5cecb870fe90800000000000000
+      internalID: -6993957468491564001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_46
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 3
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4d9a0fe0cddb260800000000000000
+      internalID: 7115084943040566501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vita_47
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 3
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e644c53db24aa0070800000000000000
+      internalID: 8073445790151623790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
