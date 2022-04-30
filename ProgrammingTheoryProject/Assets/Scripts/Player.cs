@@ -8,17 +8,8 @@ namespace Jumpy
     {
         public float horizontalInput;
         public float verticalInput;
+        private bool _canJump;
 
-        protected override void Move()
-        {
-            horizontalInput = Input.GetAxis("Horizontal");
-            this.rB.AddForce(Vector2.right * MovementSpeed * horizontalInput);
-
-            /*verticalInput = Input.GetAxis("Vertical");
-            transform.Translate(Vector2.up * verticalInput * MovementSpeed * Time.deltaTime);*/
-
-
-        }
 
         private void Awake()
         {
@@ -27,6 +18,17 @@ namespace Jumpy
             
         }
 
+       
+        protected override void Move()
+        {
+            horizontalInput = Input.GetAxis("Horizontal");
+            this.rB.AddForce(Vector2.right * MovementSpeed * horizontalInput);
+        }
+
+        protected override void Jump()
+        {
+
+        }
 
     }
 }

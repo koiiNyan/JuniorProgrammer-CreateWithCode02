@@ -28,11 +28,14 @@ namespace Jumpy
         protected Rigidbody2D rB { get; set; }
 
 
-        private void Update()
+        protected void Update()
         {
             Move();
+            Jump();
         }
         protected abstract void Move();
+        protected abstract void Jump();
+
 
     }
 }
