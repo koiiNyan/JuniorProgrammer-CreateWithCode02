@@ -6,10 +6,6 @@ namespace Jumpy
 {
     public class Enemy : Unit
     {
-        protected override void Jump()
-        {
-            
-        }
 
         protected override void Move()
         {

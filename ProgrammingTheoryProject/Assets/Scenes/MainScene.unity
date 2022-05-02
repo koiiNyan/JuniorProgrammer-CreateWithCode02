@@ -299,8 +299,8 @@ GameObject:
   - component: {fileID: 1190575366}
   - component: {fileID: 1190575365}
   - component: {fileID: 1190575368}
-  - component: {fileID: 1190575369}
   - component: {fileID: 1190575367}
+  - component: {fileID: 1190575369}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -367,7 +367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190575364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.506, y: -2.6, z: 0}
+  m_LocalPosition: {x: -3.526, y: -2.648, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -385,8 +385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e18dc074135909844bb31d6bee12ab3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalInput: 0
-  verticalInput: 0
+  _canJump: 1
+  _jumpForce: 2
 --- !u!61 &1190575368
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -424,8 +424,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseAutoMass: 1
+  m_Mass: 0.38368055
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1123,6 +1123,6 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.017}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
